@@ -1,53 +1,45 @@
-from behave import *
-from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver import ActionChains
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.select import Select
 import random
-from POM.AutomationDriver import AutomationDriver
-from POM.NewUserPage import NewUserPage
+
+import xlrd
+from behave import *
+from selenium.common.exceptions import TimeoutException
+from selenium.webdriver import ActionChains
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support import ui
+
+from POM.Helpers.AutomationDriver import AutomationDriver
+from POM.Helpers.LoginPage import LoginPage
+from POM.Helpers.MainApp import MainApp
+from POM.NewUser.AdminLoginPage import AdminLoginPage
+from POM.NewUser.DjangoPage import DjangoPage
+from POM.NewUser.NewUserPage import NewUserPage
 
 use_step_matcher("re")
 
 
 @given("We have logged in with env")
 def step_impl(context):
-    """
-    :type context: behave.runner.Context
-    """
+
     driver = AutomationDriver.driver
-    for row in context.table:
-        env =row['environment']
 
-        #base_url = "https://funeral-director-frontend."
-        #driver.get(base_url+env+".fnc-dev.co.uk/admin")
-        if env == "local ":
-            driver.get("http://funeral-director-frontend.local.fnc-dev.co.uk/admin")
-            driver.find_element_by_id("id_username").clear()
-            driver.find_element_by_id("id_username").send_keys("admin@admin.com")
-            driver.find_element_by_id("id_password").clear()
-            driver.find_element_by_id("id_password").send_keys("admin")
-        elif env =="preprod" :
-            driver.get("https://funeral-director-frontend-preprod.fnc-tools.co.uk/admin")
-            driver.find_element_by_id("id_username").clear()
-            driver.find_element_by_id("id_username").send_keys("admin@admin.com")
-            driver.find_element_by_id("id_password").clear()
-            driver.find_element_by_id("id_password").send_keys("PX3TfHt5JxW72mJnpdG7Yr4S")
-        elif env == "qa":
-            driver.get ("https://funeral-director-frontend-qa.fnc-dev.co.uk/admin")
-            driver.find_element_by_id("id_username").clear()
-            driver.find_element_by_id("id_username").send_keys("admin@admin.com")
-            driver.find_element_by_id("id_password").clear()
-            driver.find_element_by_id("id_password").send_keys("admin")
+    TestData = xlrd.open_workbook("F:\\AUTOMATION\\ALLCompletedProjects\\Python\\VM\\TestData.xlsx")
+    AllUsers = TestData.sheet_by_name("Admin")
 
-        # driver.get("https://funeral-director-frontend-preprod.fnc-tools.co.uk/admin")
-        driver.maximize_window()
-        driver.implicitly_wait(30)
-        driver.find_element_by_css_selector("input[type=\"submit\"]").click()
-        driver.find_element_by_link_text("Users").click()
+    Environment = AllUsers.cell_value(1,0) # will always have value selected from ADMIMN sheet Row / Colum 0
 
+    AdminLogin = AdminLoginPage(driver)
+    if Environment == "local":
+        AdminLogin.local()
+    elif Environment =="preprod" :
+        AdminLogin.preprod()
+    elif Environment == "qa":
+        AdminLogin.qa()
 
-    pass
+    driver.maximize_window()
+    driver.implicitly_wait(30)
+    driver.find_element_by_css_selector("input[type=\"submit\"]").click()
+    driver.find_element_by_link_text("Users").click()
 
 @then("we create new users using Django Admin")
 def step_impl(context):
@@ -56,237 +48,178 @@ def step_impl(context):
     """
     driver = AutomationDriver.driver
 
-    for row in context.table:
-        location = row['location']
-        email1   = row['email1']
-        username1 = row['username1']
-        lastname1 = row['lastname1']
-        password1 = row['password1']
 
-        driver.find_element_by_xpath(".//*[@id='content-main']/ul/li/a").click()  # Add User
-        driver.find_element_by_id("id_username").clear()
-        driver.find_element_by_id("id_username").send_keys(email1)
-        driver.find_element_by_id("id_password1").send_keys(password1)
-
-        driver.find_element_by_id("id_password2").send_keys(password1)
-
+    TestData = xlrd.open_workbook("F:\\AUTOMATION\\ALLCompletedProjects\\Python\\VM\\TestData.xlsx")
+    AllUsers = TestData.sheet_by_name("Admin")
+    AdminUsers = DjangoPage(driver)
+    for row in range (AllUsers.nrows):
         num1 = random.randint(100000, 999999)
         num2 = random.randint(100000, 999999)
+        if row == 0:
+            a= 1
+        else :
+            location = AllUsers.cell_value(row, 1)
+            email1   = AllUsers.cell_value(row, 2)
+            username1 = AllUsers.cell_value(row, 3)
+            lastname1 = AllUsers.cell_value(row, 4)
+            password1 = AllUsers.cell_value(row, 5)
 
-        driver.find_element_by_id("id_staffmember-0-uuid").send_keys(num1)
-        driver.find_element_by_id("id_staffmember-0-staff_id_number").send_keys(num2)
-        driver.find_element_by_id("id_staffmember-0-primary_site").click()
-        if location == "edinburgh":
-            Select(driver.find_element_by_id("id_staffmember-0-primary_site")).select_by_visible_text("East Newington Place")
-            driver.find_element_by_xpath(".//*[@id='id_staffmember-0-secondary_sites']/option[20]").click() # Colinton
-        else:
-            Select(driver.find_element_by_id("id_staffmember-0-primary_site")).select_by_visible_text("Arden House")
-            driver.find_element_by_xpath(".//*[@id='id_staffmember-0-secondary_sites']/option[9]").click() # Bolton
+            AdminUsers.EnterUserDetails(email1,password1, num1, num2, location)
+            AdminUsers.ReEnterDetails(username1, lastname1, email1)
 
-        driver.find_element_by_xpath(".//*[@id='id_staffmember-0-capabilities']/option[8]").click()
-        driver.find_element_by_id("id_staffmember-0-contracted_hours_per_week").send_keys("37.5")
-        driver.find_element_by_name("_continue").click()
+    AdminUsers.Logout()
 
-        driver.find_element_by_id("id_first_name").send_keys(username1)
-        driver.find_element_by_id("id_last_name").send_keys(lastname1)
-        driver.find_element_by_id("id_email").send_keys(email1)
-        driver.find_element_by_xpath(".//*[@id='id_groups']/option[4]").click()
-        #driver.find_element_by_name("_continue").click()
-        driver.find_element_by_xpath(".//*[@id='user_form']/div/div[2]/input[1]").click()
+@given("I have required login detail from user created (?P<Location>.+)")
+def step_impl(context, Location):
 
-        # def is_element_present(self, how, what):
-        #     try: driver.find_element(by=how, value=what)
-        #     except NoSuchElementException as e: return False
-        #     return True
-        #
-        # # bodyText = driver.find_element_by_tag_name('body').text
-        # # assert ("the text you want to check for" in bodyText)
-
-
-    elem = driver.find_element_by_xpath(".//*[@id='header']/div[2]/a[3]")
-    ActionChains(driver).move_to_element(elem).click().perform()
-
-
-
-@given("I have required login detail from user created")
-def step_impl(context):
-    """
-    :type context: behave.runner.Context
-    """
     driver = AutomationDriver.driver
-    for row in context.table:
-        environment = row['environment']
-        email1      = row['email1']
-        password1   = row['password1']
+    TestData = xlrd.open_workbook("F:\\AUTOMATION\\ALLCompletedProjects\\Python\\VM\\TestData.xlsx")
+    AllUsers = TestData.sheet_by_name("Admin")
 
-        driver = AutomationDriver.driver
-        #base_url = "https://funeral-director-frontend."
-        #driver.get(base_url + environment +".fnc-dev.co.uk/credentials/login/?next=/")
-        driver.get("https://funeral-director-frontend-preprod.fnc-tools.co.uk/credentials/login/?next=/")
-        if environment == "local ":
-            driver.get("http://funeral-director-frontend.local.fnc-dev.co.uk/credentials/login/?next=/")
-        elif environment =="preprod" :
-            driver.get("https://funeral-director-frontend-preprod.fnc-tools.co.uk/credentials/login/?next=/")
-        elif environment == "qa":
-            driver.get ("https://funeral-director-frontend-qa.fnc-dev.co.uk/credentials/login/?next=/")
+    if Location == "Edinburgh" :
+        Environment = AllUsers.cell_value(1, 0)
+        email   = AllUsers.cell_value(1, 2)
+        username1 = AllUsers.cell_value(1, 3)
+        lastname1 = AllUsers.cell_value(1, 4)
+        password = AllUsers.cell_value(1, 5)
 
+    else :
+        Environment = AllUsers.cell_value(2, 0)
+        email  = AllUsers.cell_value(2, 2)
+        username1 = AllUsers.cell_value(2, 3)
+        lastname1 = AllUsers.cell_value(2, 4)
+        password = AllUsers.cell_value(2, 5)
 
-        driver.maximize_window()
-        driver.implicitly_wait(30)
+    mainapp = MainApp(driver)
+    if Environment == "local":
+        mainapp.local()
+    elif Environment =="preprod" :
+        mainapp.preprod()
+    elif Environment == "qa":
+        mainapp.qa()
 
-        driver.find_element_by_id("id_username").send_keys(email1)
-        driver.find_element_by_id("id_password").send_keys(password1)
-        driver.find_element_by_xpath("//input[@value='Login']").click()
-    pass
+    driver.maximize_window()
+    driver.implicitly_wait(30)
 
+    login= LoginPage(driver)
+    login.UserName(email)
+    login.Password(password)
 
-@then("I create all the Users")
-def step_impl(context):
-    """
-    :type context: behave.runner.Context
-    """
+@then("I create all the Users (?P<Location>.+)")
+def step_impl(context, Location):
+
     driver = AutomationDriver.driver
+    newuser = NewUserPage(driver)
+    newuser.OpenMenuLink()
+    TestData = xlrd.open_workbook("F:\\AUTOMATION\\ALLCompletedProjects\\Python\\VM\\TestData.xlsx")
+    if Location == "Edinburgh":
+        AllUsers = TestData.sheet_by_name("EdinNewUsers")
+    else:
+        AllUsers = TestData.sheet_by_name("BoltonNewuser")
 
-    for row in context.table:
-        location    = row['location']
-        email2      = row['email2']
-        username2   = row['username2']
-        lastname2   = row['lastname2']
-        role        = row['role']
-
+    for rows in range(AllUsers.nrows):
         colleagueid = random.randint(100000, 999999)
         num1 = random.randint(1000000000, 9999999999)
-
-        driver.find_element_by_id("side_nav_staff_admin_list_view").click()
-        driver.find_element_by_id("add_user").click()
-        driver.find_element_by_id("id_user-email").send_keys(email2)
-        driver.find_element_by_id("id_user-first_name").send_keys(username2)
-        driver.find_element_by_id("id_user-last_name").send_keys(lastname2)
-        driver.find_element_by_id("id_staff_member-primary_mobile_number").send_keys(num1)
-
-        newuser = NewUserPage(driver)
-
-        if role == "FD":
-            F_Role = "Funeral director"
-            newuser.UserRole(F_Role)
-        elif role == "FSO":
-            F_Role = "Funeral service operative"
-            newuser.UserRole(F_Role)
-        elif role == "LM":
-            F_Role = "Logistics manager"
-            newuser.UserRole(F_Role)
-        elif role == "mortuary":
-            F_Role = "Mortuary staff"
-            newuser.UserRole(F_Role)
-        elif role == "RM":
-            F_Role = "Regional manager"
-            newuser.UserRole(F_Role)
-
-        driver.find_element_by_id("id_staff_member-staff_id_number").send_keys(colleagueid)
-
-        ################ PRIMARY SITE ####################
-
-        if location == "edinburgh" :
-            newuser.sitelocation("Lothian Road")
+        if rows == 0 :
+            a= 1
         else:
-            newuser.sitelocation("Arden House")
+            email      = AllUsers.cell_value(rows, 1)
+            username2  = AllUsers.cell_value(rows, 2)
+            lastname2  = AllUsers.cell_value(rows, 3)
+            role       = AllUsers.cell_value(rows, 4)
 
-        ################ SECONDARY SITE ##################
+            newuser.AddUserLink(email,username2,lastname2,num1, colleagueid)
 
-        if location == "edinburgh" :
-            newuser.SecondarySite("Colinton")
-            newuser.SecondarySite("Gilmerton")
-            newuser.SecondarySite("Morningside")
-            newuser.SecondarySite("South Clerk Street")
-            newuser.SecondarySite("Ferry Road")
-            newuser.SecondarySite("Queensferry Road")
-            newuser.SecondarySite("East Newington Place")
-            newuser.SecondarySite("Corstorphine")
-            newuser.SecondarySite("Leith")
-            newuser.SecondarySite("Piershill")
+            if role == "FD":
+                F_Role = "Funeral director"
+                newuser.UserRole(F_Role)
+            elif role == "FSO":
+                F_Role = "Funeral service operative"
+                newuser.UserRole(F_Role)
+            elif role == "LM":
+                F_Role = "Logistics manager"
+                newuser.UserRole(F_Role)
+            elif role == "mortuary":
+                F_Role = "Mortuary staff"
+                newuser.UserRole(F_Role)
+            elif role == "RM":
+                F_Role = "Regional manager"
+                newuser.UserRole(F_Role)
 
-        else:
-            newuser.SecondarySite("Horwich")
-            newuser.SecondarySite("Chorley Old Rd")
-            newuser.SecondarySite("Hall and Heyes")
-            newuser.SecondarySite("Relphs")
-            newuser.SecondarySite("Bolton")
-            newuser.SecondarySite("Farnworth")
-            newuser.SecondarySite("Shaw & Son")
-            newuser.SecondarySite("Hardman and McManus")
-            newuser.SecondarySite("Worthingtons")
-            newuser.SecondarySite("Cheethams")
+            # ADD SITE
 
+            if Location == "Edinburgh" :
+                newuser.sitelocation("Lothian Road")
+                newuser.SecondarySite("Colinton")               # SECONDARY SITE
+                newuser.SecondarySite("Gilmerton")              # SECONDARY SITE
+                newuser.SecondarySite("Morningside")            # SECONDARY SITE
+                newuser.SecondarySite("South Clerk Street")     # SECONDARY SITE
+                newuser.SecondarySite("Ferry Road")             # SECONDARY SITE
+                newuser.SecondarySite("Queensferry Road")       # SECONDARY SITE
+                newuser.SecondarySite("East Newington Place")   # SECONDARY SITE
+                newuser.SecondarySite("Corstorphine")           # SECONDARY SITE
+                newuser.SecondarySite("Leith")                  # SECONDARY SITE
+                newuser.SecondarySite("Piershill")              # SECONDARY SITE
+            else:
+                newuser.sitelocation("Arden House")
+                newuser.SecondarySite("Horwich")                # SECONDARY SITE
+                newuser.SecondarySite("Chorley Old Rd")         # SECONDARY SITE
+                newuser.SecondarySite("Hall and Heyes")         # SECONDARY SITE
+                newuser.SecondarySite("Relphs")                 # SECONDARY SITE
+                newuser.SecondarySite("Bolton")                 # SECONDARY SITE
+                newuser.SecondarySite("Farnworth")              # SECONDARY SITE
+                newuser.SecondarySite("Shaw & Son")             # SECONDARY SITE
+                newuser.SecondarySite("Hardman and McManus")    # SECONDARY SITE
+                newuser.SecondarySite("Worthingtons")           # SECONDARY SITE
+                newuser.SecondarySite("Cheethams")              # SECONDARY SITE
 
-        newuser.ContractedHours("37.5")
-        driver.find_element_by_id("save-progress").click()
+            newuser.ContractedHours("37.5")
+            newuser.SaveNewUserDetails()
+
+            try:
+                ui.WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.CLASS_NAME, "message-content")))
+                elem = driver.find_element_by_class_name("message-content").text
+                if elem.startswith("You have successfully created"):
+                    print("Colleague Created Successfully \n")
+            except TimeoutException as e: print("Colleague Could not be created. Please look into this")
 
         ############### Add more capabilities ##############
 
-        driver.find_element_by_id("side_nav_staff_admin_list_view").click()
-        driver.find_element_by_link_text(email2).click()
+            newuser.FindUser(email)
+            if role == "FD":
+                newuser.FDCapabilities()
+            elif role == "FSO":
+                newuser.FSOcapabilities()
+            elif role == "LM":
+                newuser.LMCapabilities()
+            elif role == "mortuary":
+                newuser.MortuaryCapabilities()
+            elif role == "RM":
+                newuser.RMCapabilities()
 
-        # 1		can_drive_hearse
-        # 2		can_drive_limo
-        # 3		can_bear_coffin
-        # 4		can_embalm_deceased
-        # 5		can_drive_ambulance
-        # 6		can_arrange_funeral
-        # 7		can_conduct_funeral
-        # 8		can_administer_users
-        # 9		can_administer_budgets
-        # 10	can_view_security_audit
-        # 11	can_schedule_resources
-        # 12	can_administer_scheduler_settings
-
-        if role == "FD":
-            driver.find_element_by_xpath(".//*[@id='id_staff_member-capabilities']/option[8]").click()
-            driver.find_element_by_xpath(".//*[@id='id_staff_member-capabilities']/option[9]").click()
-            driver.find_element_by_xpath(".//*[@id='id_staff_member-capabilities']/option[11]").click()
-            driver.find_element_by_xpath(".//*[@id='id_staff_member-capabilities']/option[12]").click()
-        elif role == "FSO":
-            driver.find_element_by_xpath(".//*[@id='id_staff_member-capabilities']/option[9]").click()
-        elif role == "LM":
-            driver.find_element_by_xpath(".//*[@id='id_staff_member-capabilities']/option[9]").click()
-        elif role == "mortuary":
-            driver.find_element_by_xpath(".//*[@id='id_staff_member-capabilities']/option[9]").click()
-        elif role == "RM":
-            driver.find_element_by_xpath(".//*[@id='id_staff_member-capabilities']/option[9]").click()
-
-            # driver.find_element_by_id("save-progress").click()
-    driver.find_element_by_css_selector("button.menu-toggle__nav.menu-toggle__nav--user").click()
-    driver.find_element_by_link_text("Log out").click()
-pass
+            newuser.SaveNewUserDetails()
+    newuser.Logout()
 
 
 @then("I generate passwords for all the users created")
 def step_impl(context):
-    """
-    :type context: behave.runner.Context
-    """
     driver = AutomationDriver.driver
+    newuser = NewUserPage(driver)
 
-    for row in context.table:
-        email = row['email']
-        password = row['password']
-        username = row['username']
-        lastname = row['lastname']
+    TestData = xlrd.open_workbook("F:\\AUTOMATION\\ALLCompletedProjects\\Python\\VM\\TestData.xlsx")
+    AllUsers = TestData.sheet_by_name("AllNewUsers")
 
-        name = username + " " + lastname
+    for rows in range(AllUsers.nrows):
+        if rows == 0 :
+            a= 1
+        else:
+            email = AllUsers.cell_value(rows, 1)
+            username = AllUsers.cell_value(rows, 2)
+            lastname = AllUsers.cell_value(rows, 3)
+            password = AllUsers.cell_value(rows, 5)
 
-        driver.find_element_by_id("searchbar").clear()
-        driver.find_element_by_id("searchbar").send_keys(email)
-        driver.find_element_by_css_selector("input[type=\"submit\"]").click()
-        driver.find_element_by_link_text(name).click()
-        driver.find_element_by_link_text("this form").click()
-
-        driver.find_element_by_id("id_password1").send_keys("password")
-        driver.find_element_by_id("id_password2").send_keys("password")
-
-        driver.find_element_by_css_selector("input.default").click()
-        driver.find_element_by_name("_save").click()
+            name = username + " " + lastname
+            newuser.ResetPassword(email,name, password)
 
     elem = driver.find_element_by_xpath(".//*[@id='header']/div[2]/a[3]")
     ActionChains(driver).move_to_element(elem).click().perform()
-
-

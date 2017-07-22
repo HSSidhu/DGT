@@ -1,5 +1,8 @@
 from selenium.webdriver.common.keys import Keys
 
+from POM.CalendarPage import CalendarPage
+
+
 class FirstCallPage(object):
 
     def __init__(self,AutomationDriver):
@@ -108,6 +111,10 @@ class FirstCallPage(object):
 
     def savefirstcall(self):
         self.driver.find_element_by_css_selector("button.btn-primary.btn-save-first-contact").click()
+
+    def Logout(self):
+        self.driver.find_element_by_css_selector("button.menu-toggle__nav.menu-toggle__nav--user").click()
+        self.driver.find_element_by_link_text("Log out").click()
 
 # FIRST CALL SAVED #
 

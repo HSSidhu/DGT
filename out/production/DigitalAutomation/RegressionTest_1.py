@@ -11,9 +11,9 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import Select
 
-from POM.LoginPage import LoginPage
-from POM.MyUniqueID import MyUniqueID
-from POM.BookingInPage import BookingInPage
+from POM.Helpers.LoginPage import LoginPage
+from POM.Regression.BookingInPage import BookingInPage
+from POM.Regression.MyUniqueID import MyUniqueID
 
 
 class Automation(unittest.TestCase):
