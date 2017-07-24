@@ -1,4 +1,7 @@
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import ui
+from selenium.webdriver.support import expected_conditions as EC
 
 class CalendarPage(object):
 
@@ -68,9 +71,31 @@ class CalendarPage(object):
     def SaveEvent(self):
         self.driver.find_element_by_id("save-progress").click()
 
-    def Logout(self):
-        self.driver.find_element_by_css_selector("button.menu-toggle__nav.menu-toggle__nav--user").click()
-        self.driver.find_element_by_link_text("Log out").click()
+        # This Logic will reassign the funeral Director if first one selected is not available #
+        i = 2
+        try:
+            self.driver.find_element_by_xpath(".//*[@id='form-errors']/ul")
+            while True:
+                link = self.driver.find_element_by_xpath(".//*[@id='form-errors']/ul").text
+                if link.startswith("Funeral director"):
+                    ui.WebDriverWait(self.driver, 5).until(EC.visibility_of_element_located((By.XPATH, ".//*[@id='form-errors']/ul")))
+                    b=str(i)
+                    self.driver.find_element_by_id("select2-id_funeral_arrangement_booking-funeral_director-container").click()
+                    elem = self.driver.find_element_by_xpath(".//*[@id='select2-id_funeral_arrangement_booking-funeral_director-results']/li["+b+"]")
+                    elem.click()
+                    self.driver.find_element_by_id("save-progress").click()
+                    try:
+                        ui.WebDriverWait(self.driver, 5).until(EC.visibility_of_element_located((By.XPATH, ".//*[@id='new_event_picker_button']")))
+                        break
+                    except:i=i+1
+        except:
+            print("Calendar Event Saved Succesfully \n")
+        finally:
+            self.driver.find_element_by_css_selector("button.menu-toggle__nav.menu-toggle__nav--user").click()
+            self.driver.find_element_by_link_text("Log out").click()
+            print("Calendar Event Saved Succesfully \n")
+
+
 
 
 

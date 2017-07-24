@@ -1,5 +1,9 @@
+from selenium.common.exceptions import TimeoutException
+from selenium.webdriver import ActionChains
+from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-
+from selenium.webdriver.support import ui
+from selenium.webdriver.support import expected_conditions as EC
 from POM.TestData.DataSheetPage import DataSheetPage
 
 
@@ -7,6 +11,21 @@ class MortuaryPage(object):
 
     def __init__(self,AutomationDriver):
         self.driver= AutomationDriver
+
+            ## CREATE  ARRANGEMENT##
+    def CreateArrangement(self, Dname):
+        a = 2
+        try:
+            while a < 20:
+                b = str(a)
+                name = self.driver.find_element_by_xpath(".//*[@id='funeral_list']/div["+b+"]/div/div[1]/h2").text
+                if name == Dname :
+                    self.driver.find_element_by_xpath(".//*[@id='funeral_list']/div["+b+"]/div/div[3]/a[1]").click()
+                    break
+                else:
+                    a = a+1
+        except Exception as e:
+            self.driver.find_element_by_link_text(Dname).click()
 
                             ## PREPATAION Tile##
     def PreparationTile(self):
@@ -100,10 +119,29 @@ class MortuaryPage(object):
         self.driver.find_element_by_id("trigger-second-verification").click()
         self.driver.find_element_by_id("id_deceased_status-is_dressed_in_gown").click()
         self.driver.find_element_by_id("id_deceased_status-is_deceased_laid_in_coffin").click()
+
+        try:
+            ui.WebDriverWait(self.driver,10).until(EC.visibility_of_element_located((By.XPATH, ".//*[@id='verification-message']/div/div")))
+            #driver.find_element_by_xpath(".//*[@id='verification-message']/div/div")
+            elem = self.driver.find_element_by_xpath(".//*[@id='verification-message']/div/div").text
+            if elem.startswith("Second colleague verification was successful"):
+                print("Mortuary Flow Completed Successfully \n")
+            else:
+                print(elem)
+                self.driver.close()
+        except Exception as e : print(e)
+
         self.driver.find_element_by_id("save-progress").click()
 
     def Logout(self):
         self.driver.find_element_by_css_selector("button.menu-toggle__nav.menu-toggle__nav--user").click()
         self.driver.find_element_by_link_text("Log out").click()
 
+    def CheckJoyRide(self):
+        try:
+            ui.WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((By.XPATH, ".//*[@class='joyride-cta']")))
+            elem = self.driver.find_element_by_xpath(".//*[@class='joyride-cta']")
+            ActionChains(self.driver).move_to_element(elem).click().perform()
+
+        except TimeoutException as e: print("no joy ride")
 

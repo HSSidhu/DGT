@@ -2,22 +2,23 @@ from datetime import datetime, timedelta
 
 import arrow
 from behave import *
-from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver import ActionChains
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support import ui
-
 from POM.Helpers.AutomationDriver import AutomationDriver
 from POM.Helpers.MainApp import MainApp
 from POM.Helpers.TrackingApp import TrackingApp
 from POM.Regression.BookingInPage import BookingInPage
 from POM.Regression.BookingOutPage import BookingOutPage
 from POM.Regression.CalendarPage import CalendarPage
+from POM.Regression.CloseFuneralPage import CloseFuneralPage
 from POM.Regression.FirstCallPage import FirstCallPage
 from POM.Regression.MortuaryPage import MortuaryPage
 from POM.Regression.MyUniqueID import MyUniqueID
 from POM.TestData.DataSheetPage import DataSheetPage
+from selenium.common.exceptions import NoSuchElementException, TimeoutException
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support import ui
+
 
 
 @given(
@@ -240,7 +241,7 @@ def step_impl(context, Funeral_Home, Deceased_FirstName, Deceased_Lastname, fune
         mainapp.qa()
 
     Dname = Deceased_FirstName+" "+Deceased_Lastname
-    RegresstionTestUsers = DataSheetPage(driver)   # Login in the Booking in App
+    RegresstionTestUsers = DataSheetPage(driver)   # Login in the Booking OUT App
     RegresstionTestUsers.LoginUsers(hub)
 
     ID = MyUniqueID(driver)   # Get the Unique ID for the Deceased
@@ -293,26 +294,7 @@ def step_impl(context, Deceased_FirstName, Deceased_Lastname, Environment, hub):
     RegresstionTestUsers = DataSheetPage(driver)   # Login in the Booking in App
     RegresstionTestUsers.LoginUsers(hub)
 
-    driver.find_element_by_link_text(Dname).click()
-    driver.find_element_by_id("submit_commit_deceased").click()
-    driver.find_element_by_xpath(".//*[@id='dialog-ok']").click()
-    try:
-        ui.WebDriverWait(driver, 20).until(EC.visibility_of_element_located((By.XPATH, ".//*[@class ='message message-success']")))
-        elem = driver.find_element_by_xpath(".//*[@class ='message message-success']").text
-        if elem.startswith("This deceased was confirmed as committed"):
-            print(Dname + " Comitted Successfully")
-    except Exception as e: print(Dname + " NOT Comitted. Something went wrong")
+    CloseAndCommit = CloseFuneralPage(driver)
+    CloseAndCommit.CommitDeceased(Dname)        # Commit Deceased
+    CloseAndCommit.CloseArrangement(Dname)      # Close the Funeral
 
-    driver.find_element_by_id("close_funeral_arrangement").click()
-    driver.find_element_by_id("id_closure_reason_1").click()
-    driver.find_element_by_id("submit_close_funeral_arrangement").click()
-    driver.find_element_by_xpath(".//*[@id='dialog-ok']").click()
-
-    try:
-        ui.WebDriverWait(driver, 20).until(EC.visibility_of_element_located((By.XPATH, ".//*[@class='message message-success']")))
-        elem = driver.find_element_by_xpath(".//*[@class='message message-success']").text
-        if elem.startswith("You have successfully closed"):
-            print(Dname + " Funeral Arrangement Closed Successfully")
-    except Exception as e: print(Dname + " Funeral Arrangement Cann Not be Closed")
-    driver.find_element_by_css_selector("button.menu-toggle__nav.menu-toggle__nav--user").click()
-    driver.find_element_by_link_text("Log out").click()

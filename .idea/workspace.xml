@@ -5,145 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f03eed38-f532-4112-b890-38aacfa8d2c8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/POM/Helpers/HelperFunction.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/POM/Helpers/MainApp.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/POM/Helpers/TrackingApp.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/POM/NewUser/AdminLoginPage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/POM/NewUser/NewUserPage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/POM/Regression/BookingInPage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/POM/Regression/BookingOutPage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/POM/Regression/CalendarPage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/POM/Regression/CloseFuneralPage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/POM/Regression/MortuaryPage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/POM/Regression/MyUniqueID.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/POM/TestData/DataSheetPage.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/POM/BookingInPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/POM/MyUniqueID.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/POM/NewUserPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/AutomationDriver.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/BookingInPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/FirstCallPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/LoginPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/MyUniqueID.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/NewUserPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/POM/AutomationDriver.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/POM/BookingInPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/POM/FirstCallPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/POM/LoginPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/POM/MyUniqueID.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/POM/NewUserPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/AutomationDriver.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/BDD/RegressionTesting.feature" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/BDD/steps/RegressionTesting.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/BookingInPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/FirstCallPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/LoginPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/MyUniqueID.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/AutomationDriver.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/BookingInPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/FirstCallPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/LoginPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/MyUniqueID.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/RegressionTest_1.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/BDD/RegressionTesting.feature" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/BDD/steps/RegressionTesting.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/FirstCallPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/FirstCallPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/BDD/RegressionTesting.feature" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/BDD/steps/RegressionTesting.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/FirstCallPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/FirstCallPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/NewUserPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/NewUserPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/.idea/codeStyleSettings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/.idea/libraries/selenium_server_standalone_3_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/DigitalAutomation.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/NewUserPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/NewUserPage.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestData.xlsx" afterPath="$PROJECT_DIR$/TestData.xlsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BDD/NewUserCreation.feature" afterPath="$PROJECT_DIR$/BDD/NewUserCreation.feature" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BDD/RegressionTesting.feature" afterPath="$PROJECT_DIR$/BDD/RegressionTesting.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BDD/steps/NewUserCreation.py" afterPath="$PROJECT_DIR$/BDD/steps/NewUserCreation.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BDD/steps/RegressionTesting.py" afterPath="$PROJECT_DIR$/BDD/steps/RegressionTesting.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RegressionTest_1.py" afterPath="$PROJECT_DIR$/RegressionTest_1.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/.idea/workspace.xml" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/BDD/NewUserCreation.feature" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/BDD/NewUserCreation.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/BDD/RegressionTesting.feature" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/BDD/RegressionTesting.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/BDD/steps/NewUserCreation.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/BDD/steps/NewUserCreation.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/BDD/steps/RegressionTesting.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/BDD/steps/RegressionTesting.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/RegressionTest_1.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/RegressionTest_1.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/AutomationDriver.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/AutomationDriver.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/BookingInPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/BookingInPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/MyUniqueID.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/MyUniqueID.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/NewUserPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/NewUserPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/AutomationDriver.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/AutomationDriver.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/BookingInPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/BookingInPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/MyUniqueID.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/MyUniqueID.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/NewUserPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/NewUserPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/AutomationDriver.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/AutomationDriver.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/BookingInPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/BookingInPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/MyUniqueID.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/MyUniqueID.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/NewUserPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/NewUserPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/AutomationDriver.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/AutomationDriver.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/BookingInPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/BookingInPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/MyUniqueID.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/MyUniqueID.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/NewUserPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/NewUserPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/AutomationDriver.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/AutomationDriver.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/BookingInPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/BookingInPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/FirstCallPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/FirstCallPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/MyUniqueID.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/MyUniqueID.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/NewUserPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/NewUserPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/AutomationDriver.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/AutomationDriver.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/BookingInPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/BookingInPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/FirstCallPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/FirstCallPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/MyUniqueID.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/MyUniqueID.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/NewUserPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/NewUserPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/AutomationDriver.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/AutomationDriver.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/BookingInPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/BookingInPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/FirstCallPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/FirstCallPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/MyUniqueID.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/MyUniqueID.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/NewUserPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/NewUserPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/AutomationDriver.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/AutomationDriver.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/BookingInPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/BookingInPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/FirstCallPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/FirstCallPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/MyUniqueID.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/MyUniqueID.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/NewUserPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/NewUserPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/AutomationDriver.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/AutomationDriver.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/BookingInPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/BookingInPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/FirstCallPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/FirstCallPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/MyUniqueID.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/MyUniqueID.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/AutomationDriver.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/AutomationDriver.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/BookingInPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/BookingInPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/FirstCallPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/FirstCallPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/MyUniqueID.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/MyUniqueID.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/AutomationDriver.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/AutomationDriver.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/BookingInPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/BookingInPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/FirstCallPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/FirstCallPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/MyUniqueID.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/MyUniqueID.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/AutomationDriver.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/AutomationDriver.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/BookingInPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/BookingInPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/FirstCallPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/FirstCallPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/MyUniqueID.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/MyUniqueID.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/AutomationDriver.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/AutomationDriver.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/BookingInPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/BookingInPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/MyUniqueID.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/MyUniqueID.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/AutomationDriver.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/AutomationDriver.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/BookingInPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/BookingInPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/FirstCallPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/FirstCallPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/MyUniqueID.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/MyUniqueID.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/AutomationDriver.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/AutomationDriver.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/MyUniqueID.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/MyUniqueID.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/AutomationDriver.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/AutomationDriver.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/BookingInPage.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/BookingInPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/AutomationDriver.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/AutomationDriver.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/AutomationDriver.py" afterPath="$PROJECT_DIR$/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/out/production/DigitalAutomation/POM/AutomationDriver.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/POM/AutomationDriver.py" afterPath="$PROJECT_DIR$/POM/Helpers/AutomationDriver.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/POM/FirstCallPage.py" afterPath="$PROJECT_DIR$/POM/Regression/FirstCallPage.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/POM/LoginPage.py" afterPath="$PROJECT_DIR$/POM/Helpers/LoginPage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/POM/Regression/CloseFuneralPage.py" afterPath="$PROJECT_DIR$/POM/Regression/CloseFuneralPage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/POM/TestData/DataSheetPage.py" afterPath="$PROJECT_DIR$/POM/TestData/DataSheetPage.py" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -158,10 +25,10 @@
     <SUITE FILE_PATH="coverage/DigitalAutomation$Script1__1_.coverage" NAME="Script1 (1) Coverage Results" MODIFIED="1499585970533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DigitalAutomation$RegressionTesting.coverage" NAME="RegressionTesting Coverage Results" MODIFIED="1500679008857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BDD/steps" />
     <SUITE FILE_PATH="coverage/DigitalAutomation$NewUserCreation_feature_Re_set_all_the_passwords_for_the_created_users.coverage" NAME="NewUserCreation.feature:Re-set all the passwords for the created users Coverage Results" MODIFIED="1500219692221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/DigitalAutomation$RegressionTesting_feature.coverage" NAME="RegressionTesting.feature Coverage Results" MODIFIED="1500725468846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/DigitalAutomation$RegressionTesting_feature.coverage" NAME="RegressionTesting.feature Coverage Results" MODIFIED="1500888495376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/DigitalAutomation$NewUserCreation_feature_Create_Other_users_using_Main_app_for__Edinburgh__Users.coverage" NAME="NewUserCreation.feature:Create Other users using Main app for &quot;Edinburgh&quot; Users Coverage Results" MODIFIED="1500201090608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/DigitalAutomation$CreateNewCall_feature.coverage" NAME="CreateNewCall.feature Coverage Results" MODIFIED="1499723724283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/DigitalAutomation$NewUserCreation_feature.coverage" NAME="NewUserCreation.feature Coverage Results" MODIFIED="1500718352963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/DigitalAutomation$NewUserCreation_feature.coverage" NAME="NewUserCreation.feature Coverage Results" MODIFIED="1500888316575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/DigitalAutomation$RegressionTesting_feature_Regression_Scenario_for_creating_the_Funeral.coverage" NAME="RegressionTesting.feature:Regression Scenario for creating the Funeral Coverage Results" MODIFIED="1500388641985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/DigitalAutomation$test_feature_Accessing_a_workbook_and_its_data_into_a_web_application.coverage" NAME="test.feature:Accessing a workbook and its data into a web application Coverage Results" MODIFIED="1500656920973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/DigitalAutomation$Regression_Steps.coverage" NAME="Regression-Steps Coverage Results" MODIFIED="1499723153888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BDD/steps" />
@@ -195,45 +62,39 @@
       <file leaf-file-name="RegressionTesting.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BDD/RegressionTesting.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="51">
+              <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegressionTesting.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BDD/steps/RegressionTesting.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4692">
-              <caret line="295" column="47" lean-forward="false" selection-start-line="295" selection-start-column="47" selection-end-line="295" selection-end-column="47" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CloseFuneralPage.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/POM/Regression/CloseFuneralPage.py">
+      <file leaf-file-name="AdminLoginPage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/POM/NewUser/AdminLoginPage.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#61#0" expanded="true" />
-              </folding>
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FirstCallPage.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/POM/Regression/FirstCallPage.py">
+      <file leaf-file-name="NewUserPage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/POM/NewUser/NewUserPage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="58" />
-              <folding>
-                <element signature="e#0#61#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="329">
+              <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyUniqueID.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/POM/Regression/MyUniqueID.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -241,11 +102,39 @@
       <file leaf-file-name="MortuaryPage.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/POM/Regression/MortuaryPage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="64" />
-              <folding>
-                <element signature="e#0#55#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="976">
+              <caret line="114" column="25" lean-forward="true" selection-start-line="114" selection-start-column="25" selection-end-line="114" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataSheetPage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/POM/TestData/DataSheetPage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="533">
+              <caret line="58" column="44" lean-forward="true" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AutomationDriver.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/POM/Helpers/AutomationDriver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewUserCreation.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BDD/NewUserCreation.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="18" column="15" lean-forward="true" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -325,7 +214,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CreateUser/DjangoUserCreation.py" />
         <option value="$PROJECT_DIR$/FirstCallPage.py" />
         <option value="$PROJECT_DIR$/out/production/DigitalAutomation/FirstCallPage.py" />
         <option value="$PROJECT_DIR$/General.py" />
@@ -373,9 +261,10 @@
         <option value="$PROJECT_DIR$/POM/Regression/CalendarPage.py" />
         <option value="$PROJECT_DIR$/POM/Regression/MortuaryPage.py" />
         <option value="$PROJECT_DIR$/POM/Regression/FirstCallPage.py" />
-        <option value="$PROJECT_DIR$/BDD/RegressionTesting.feature" />
-        <option value="$PROJECT_DIR$/BDD/steps/RegressionTesting.py" />
         <option value="$PROJECT_DIR$/POM/Regression/CloseFuneralPage.py" />
+        <option value="$PROJECT_DIR$/BDD/steps/RegressionTesting.py" />
+        <option value="$PROJECT_DIR$/POM/TestData/DataSheetPage.py" />
+        <option value="$PROJECT_DIR$/BDD/RegressionTesting.feature" />
       </list>
     </option>
   </component>
@@ -389,10 +278,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1358" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -431,8 +320,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -442,6 +332,78 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="VM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DigitalAutomation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="POM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestData" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DigitalAutomation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="POM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Regression" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DigitalAutomation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="POM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewUser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DigitalAutomation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="POM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Helpers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -479,13 +441,12 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/POM/TestData" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.16503906" />
@@ -1214,44 +1175,45 @@
       <workItem from="1500571115168" duration="26031000" />
       <workItem from="1500658355720" duration="13915000" />
       <workItem from="1500676302986" duration="20535000" />
-      <workItem from="1500744125471" duration="35000" />
+      <workItem from="1500744125471" duration="4975000" />
+      <workItem from="1500884819753" duration="4993000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RegressionTesting_feature - 2017.07.22 at 11h 51m 44s.xml">
-      <configuration name="RegressionTesting.feature" configurationId="PyBehaveRunConfigurationType" />
+    <history-entry file="NewUserCreation_feature - 2017.07.24 at 09h 57m 10s.xml">
+      <configuration name="NewUserCreation.feature" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="RegressionTesting_feature - 2017.07.22 at 11h 54m 43s.xml">
-      <configuration name="RegressionTesting.feature" configurationId="PyBehaveRunConfigurationType" />
-    </history-entry>
-    <history-entry file="RegressionTesting_feature - 2017.07.22 at 11h 59m 39s.xml">
-      <configuration name="RegressionTesting.feature" configurationId="PyBehaveRunConfigurationType" />
-    </history-entry>
-    <history-entry file="RegressionTesting_feature - 2017.07.22 at 12h 00m 41s.xml">
-      <configuration name="RegressionTesting.feature" configurationId="PyBehaveRunConfigurationType" />
-    </history-entry>
-    <history-entry file="RegressionTesting_feature - 2017.07.22 at 12h 29m 46s.xml">
-      <configuration name="RegressionTesting.feature" configurationId="PyBehaveRunConfigurationType" />
-    </history-entry>
-    <history-entry file="RegressionTesting_feature - 2017.07.22 at 12h 30m 06s.xml">
-      <configuration name="RegressionTesting.feature" configurationId="PyBehaveRunConfigurationType" />
-    </history-entry>
-    <history-entry file="RegressionTesting_feature - 2017.07.22 at 12h 30m 52s.xml">
-      <configuration name="RegressionTesting.feature" configurationId="PyBehaveRunConfigurationType" />
-    </history-entry>
-    <history-entry file="RegressionTesting_feature - 2017.07.22 at 12h 31m 32s.xml">
-      <configuration name="RegressionTesting.feature" configurationId="PyBehaveRunConfigurationType" />
-    </history-entry>
-    <history-entry file="RegressionTesting_feature - 2017.07.22 at 12h 33m 17s.xml">
-      <configuration name="RegressionTesting.feature" configurationId="PyBehaveRunConfigurationType" />
+    <history-entry file="NewUserCreation_feature - 2017.07.24 at 10h 27m 01s.xml">
+      <configuration name="NewUserCreation.feature" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
     <history-entry file="RegressionTesting_feature - 2017.07.22 at 13h 13m 27s.xml">
       <configuration name="RegressionTesting.feature" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
+    <history-entry file="RegressionTesting_feature - 2017.07.24 at 09h 57m 31s.xml">
+      <configuration name="RegressionTesting.feature" configurationId="PyBehaveRunConfigurationType" />
+    </history-entry>
+    <history-entry file="RegressionTesting_feature - 2017.07.24 at 10h 01m 33s.xml">
+      <configuration name="RegressionTesting.feature" configurationId="PyBehaveRunConfigurationType" />
+    </history-entry>
+    <history-entry file="RegressionTesting_feature - 2017.07.24 at 10h 07m 28s.xml">
+      <configuration name="RegressionTesting.feature" configurationId="PyBehaveRunConfigurationType" />
+    </history-entry>
+    <history-entry file="RegressionTesting_feature - 2017.07.24 at 10h 13m 17s.xml">
+      <configuration name="RegressionTesting.feature" configurationId="PyBehaveRunConfigurationType" />
+    </history-entry>
+    <history-entry file="RegressionTesting_feature - 2017.07.24 at 10h 17m 23s.xml">
+      <configuration name="RegressionTesting.feature" configurationId="PyBehaveRunConfigurationType" />
+    </history-entry>
+    <history-entry file="RegressionTesting_feature - 2017.07.24 at 10h 20m 39s.xml">
+      <configuration name="RegressionTesting.feature" configurationId="PyBehaveRunConfigurationType" />
+    </history-entry>
+    <history-entry file="RegressionTesting_feature - 2017.07.24 at 10h 31m 48s.xml">
+      <configuration name="RegressionTesting.feature" configurationId="PyBehaveRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="338491000" />
+    <option name="totallyTimeSpent" value="348424000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1263,39 +1225,40 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4002205" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22857143" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15085287" sideWeight="0.49122807" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15245202" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2554622" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277311" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22857143" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18683812" sideWeight="0.49122807" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32745314" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20347957" sideWeight="0.50877196" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30319735" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32855567" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32745314" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1357,11 +1320,16 @@
           <line>51</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BDD/steps/RegressionTesting.py</url>
+          <line>99</line>
+          <option name="timeStamp" value="324" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="323" />
+      <option name="time" value="325" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1467,6 +1435,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1488,6 +1457,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1495,6 +1465,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
           <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1509,17 +1480,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#788#822#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Test_Data.xsl" />
-    <entry file="file://$PROJECT_DIR$/POM/Helpers/AutomationDriver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python34/Lib/site-packages/behave/parser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
@@ -1543,13 +1510,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BDD/NewUserCreation.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python34/Lib/http/client.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
@@ -1561,6 +1521,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="192" column="31" lean-forward="true" selection-start-line="192" selection-start-column="31" selection-end-line="192" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1575,13 +1536,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
           <caret line="62" column="8" lean-forward="false" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/POM/Regression/BookingOutPage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1606,38 +1561,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/POM/Regression/MyUniqueID.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/POM/TestData/DataSheetPage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="29" column="67" lean-forward="true" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/POM/NewUser/AdminLoginPage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/POM/NewUser/NewUserPage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/POM/Helpers/MainApp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="69" lean-forward="true" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1659,33 +1587,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
           <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/POM/Regression/MortuaryPage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="64" />
           <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BDD/RegressionTesting.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BDD/steps/RegressionTesting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4692">
-          <caret line="295" column="47" lean-forward="false" selection-start-line="295" selection-start-column="47" selection-end-line="295" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#0#47#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1695,18 +1598,100 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="58" />
           <folding>
-            <element signature="e#0#61#0" expanded="true" />
+            <element signature="e#0#61#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/POM/Regression/CloseFuneralPage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        <state relative-caret-position="646">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
-            <element signature="e#0#61#0" expanded="true" />
+            <element signature="e#0#61#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POM/Regression/BookingOutPage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="62" column="27" lean-forward="true" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BDD/steps/RegressionTesting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="272" column="33" lean-forward="false" selection-start-line="272" selection-start-column="33" selection-end-line="272" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BDD/NewUserCreation.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="18" column="15" lean-forward="true" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BDD/RegressionTesting.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POM/NewUser/AdminLoginPage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POM/NewUser/NewUserPage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POM/Regression/MyUniqueID.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POM/Regression/MortuaryPage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="976">
+          <caret line="114" column="25" lean-forward="true" selection-start-line="114" selection-start-column="25" selection-end-line="114" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POM/TestData/DataSheetPage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="58" column="44" lean-forward="true" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POM/Helpers/AutomationDriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

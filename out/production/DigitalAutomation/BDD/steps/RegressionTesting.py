@@ -2,22 +2,23 @@ from datetime import datetime, timedelta
 
 import arrow
 from behave import *
-from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver import ActionChains
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support import ui
-
 from POM.Helpers.AutomationDriver import AutomationDriver
 from POM.Helpers.MainApp import MainApp
 from POM.Helpers.TrackingApp import TrackingApp
 from POM.Regression.BookingInPage import BookingInPage
 from POM.Regression.BookingOutPage import BookingOutPage
 from POM.Regression.CalendarPage import CalendarPage
+from POM.Regression.CloseFuneralPage import CloseFuneralPage
 from POM.Regression.FirstCallPage import FirstCallPage
 from POM.Regression.MortuaryPage import MortuaryPage
 from POM.Regression.MyUniqueID import MyUniqueID
 from POM.TestData.DataSheetPage import DataSheetPage
+from selenium.common.exceptions import NoSuchElementException, TimeoutException
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support import ui
+
 
 
 @given(
@@ -47,15 +48,7 @@ def step_impl(context, Funeral_Home, Deceased_FirstName, Deceased_Lastname, fune
         newfirstcall.FirstCallGeneraldetails("Mr", "Test", "User", "01234567897", "010234654327869","Aunt", Funeral_Home)
         newfirstcall.FirstCallDeceasedDetails("Mr", Deceased_FirstName, Deceased_Lastname, "Other", "01/01/1944", Todaysdate, "Manchester")
         newfirstcall.FirstCallDeceasedOtherDetails()
-        newfirstcall.savefirstcall()
-
-        try:
-            driver.find_element_by_xpath(".//*[@class='message-content']")
-            elem = driver.find_element_by_xpath(".//*[@class='message-content']").text
-            if elem.startswith("First call saved"):
-                print("First Call Created Successfully\n")
-        except NoSuchElementException as e : print("Could Not Create First Call  \n")
-
+        newfirstcall.savefirstcall()   # Includes TRY and CATCH check
         newfirstcall.Logout()
 
 @step("I have booked IN the deceased {Environment} {deceased_sitename} {Deceased_FirstName} {Deceased_Lastname} {hub}")
@@ -71,19 +64,9 @@ def step_impl(context, Environment, deceased_sitename, Deceased_FirstName, Decea
     elif Environment == "qa":
         mainapp.qa()
 
-    bookingin = BookingInPage(driver)
-    # BookingIn.NavBar()
-    # BookingIn.TrackingApp()
-    ### code for the popup
-
-
     Dname = Deceased_FirstName+" "+Deceased_Lastname
     RegresstionTestUsers = DataSheetPage(driver)
     RegresstionTestUsers.LoginUsers(hub)
-
-    # bookingin = BookingInPage(driver)
-    # driver.implicitly_wait(30)
-    # bookingin.FindDeceased(Dname)
 
     ID = MyUniqueID(driver)         # Get the Unique ID for the Deceased
     UniqueID = ID.deceasedID(Dname) # Get the Unique ID for the Deceased
@@ -137,27 +120,8 @@ def step_impl(context, Deceased_FirstName, Deceased_Lastname, Environment, hub):
 
     RegresstionTestUsers = DataSheetPage(driver)   # Login in the Booking in App
     RegresstionTestUsers.LoginUsers(hub)
-
-    # bookingin = BookingInPage(driver)
-    # for row in context.table:
-    #     email1   = row['email1']
-    #     email2   = row['email2']
-    #     password = row['password']
-    #     #
-    #     # login.UserName(email1)
-    #     # login.Password(password)
-    a = 2
-    try:
-        while a < 20:
-            b = str(a)
-            name = driver.find_element_by_xpath(".//*[@id='funeral_list']/div["+b+"]/div/div[1]/h2").text
-            if name == Dname :
-                driver.find_element_by_xpath(".//*[@id='funeral_list']/div["+b+"]/div/div[3]/a[1]").click()
-                break
-            else:
-                a = a+1
-    except Exception as e:
-        driver.find_element_by_link_text(Dname).click()
+    Mortuary = MortuaryPage(driver)
+    Mortuary.CreateArrangement(Dname)
 
     driver.implicitly_wait(50)
 
@@ -167,13 +131,7 @@ def step_impl(context, Deceased_FirstName, Deceased_Lastname, Environment, hub):
     Mortuary = MortuaryPage(driver)
 
     # Joy Ride
-    try:
-        ui.WebDriverWait(driver, 20).until(EC.visibility_of_element_located((By.XPATH, ".//*[@class='joyride-cta']")))
-        elem = driver.find_element_by_xpath(".//*[@class='joyride-cta']")
-        ActionChains(driver).move_to_element(elem).click().perform()
-
-    except TimeoutException as e: print("no joy ride")
-
+    Mortuary.CheckJoyRide()
     # Preparation Tile
     driver.implicitly_wait(30)
 
@@ -184,11 +142,10 @@ def step_impl(context, Deceased_FirstName, Deceased_Lastname, Environment, hub):
     Mortuary.FingerPrints()
     Mortuary.FingerPrintPermission("Finger Print Permission")
     Mortuary.Embalm()
-    #Mortuary.EmbalmPermission()
+    Mortuary.EmbalmPermission()
     Mortuary.SavePreparation()
 
     # Coffin Selection
-
     Mortuary.CoffinTile()
     Mortuary.StandardCoffin()
     Mortuary.SelectCoffinImage()
@@ -197,7 +154,6 @@ def step_impl(context, Deceased_FirstName, Deceased_Lastname, Environment, hub):
     Mortuary.SaveCoffin()
 
     # Mortuary Flow
-
     Mortuary.MenuBar()
     Mortuary.CareAndPrep()
     Mortuary.SelectMortuary("East")
@@ -206,19 +162,11 @@ def step_impl(context, Deceased_FirstName, Deceased_Lastname, Environment, hub):
     Mortuary.SearchDeceased(Dname)
     Mortuary.DressingandCoffin()
     Mortuary.SearchDeceased(Dname)
+
     Mortuary.Encoffin(hub,UniqueID) # Will take second verification process here
-
-    try:
-        driver.find_element_by_xpath(".//*[@id='verification-message']/div/div")
-        elem = driver.find_element_by_xpath(".//*[@id='verification-message']/div/div").text
-        if elem.startswith("The deceased is not ready"):
-            print(elem)
-            driver.close()
-        elif elem.startswith("Second colleague verification was successful"):
-            print("Mortuary Flow Completed Successfully \n")
-    except Exception as e : print(e)
-
+                                    # Also holds Try / Catch
     Mortuary.Logout()
+
 @step("I create an event in the calendar {Deceased_FirstName} {Deceased_Lastname} {Environment} {event_type} {hub}")
 def step_impl(context, Deceased_FirstName, Deceased_Lastname, Environment, event_type : str, hub : str):
 
@@ -275,31 +223,7 @@ def step_impl(context, Deceased_FirstName, Deceased_Lastname, Environment, event
     calendar.Charity1("Charity 1")
     calendar.Charity2("Charity 2")
     calendar.Notes("Notes to be typed here")
-    calendar.SaveEvent()
-
-    # This Logic will reassign the funeral Director if first one selected is not available #
-    i = 2
-    try:
-        driver.find_element_by_xpath(".//*[@id='form-errors']/ul")
-        while True:
-            link = driver.find_element_by_xpath(".//*[@id='form-errors']/ul").text
-            if link.startswith("Funeral director"):
-                ui.WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.XPATH, ".//*[@id='form-errors']/ul")))
-                b=str(i)
-                driver.find_element_by_id("select2-id_funeral_arrangement_booking-funeral_director-container").click()
-                elem = driver.find_element_by_xpath(".//*[@id='select2-id_funeral_arrangement_booking-funeral_director-results']/li["+b+"]")
-                elem.click()
-                driver.find_element_by_id("save-progress").click()
-                try:
-                    ui.WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.XPATH, ".//*[@id='new_event_picker_button']")))
-                    break
-                except:i=i+1
-    except:
-        print("Calendar Event Saved Succesfully \n")
-    finally:
-        calendar.Logout()
-        print("Calendar Event Saved Succesfully \n")
-
+    calendar.SaveEvent()  # This function will ensure that available FD is allocated
 
 @then(
     "I completed the booking out Flow {Funeral_Home} {Deceased_FirstName} {Deceased_Lastname} {funeral_type} {Environment} {deceased_sitename} {hub}")
@@ -316,13 +240,8 @@ def step_impl(context, Funeral_Home, Deceased_FirstName, Deceased_Lastname, fune
     elif Environment == "qa":
         mainapp.qa()
 
-    #bookingin = BookingInPage(driver)
-    # BookingIn.NavBar()
-    # BookingIn.TrackingApp()
-    ### code for the popup
-
     Dname = Deceased_FirstName+" "+Deceased_Lastname
-    RegresstionTestUsers = DataSheetPage(driver)   # Login in the Booking in App
+    RegresstionTestUsers = DataSheetPage(driver)   # Login in the Booking OUT App
     RegresstionTestUsers.LoginUsers(hub)
 
     ID = MyUniqueID(driver)   # Get the Unique ID for the Deceased
@@ -341,13 +260,11 @@ def step_impl(context, Funeral_Home, Deceased_FirstName, Deceased_Lastname, fune
     bookingout.checkout()
 
     # Login Page #
-
     RegresstionTestUsers = DataSheetPage(driver)   # Login in the Booking in App
     RegresstionTestUsers.LoginUsers(hub)
     bookingout = BookingOutPage(driver)
 
     # Booking Out Page #
-
     for elem in driver.find_elements_by_xpath('.//*[@class = "tap-link__inner__title"]'):
         if elem.text == Dname:
             ActionChains(driver).move_to_element(elem).click().perform()
@@ -377,26 +294,7 @@ def step_impl(context, Deceased_FirstName, Deceased_Lastname, Environment, hub):
     RegresstionTestUsers = DataSheetPage(driver)   # Login in the Booking in App
     RegresstionTestUsers.LoginUsers(hub)
 
-    driver.find_element_by_link_text(Dname).click()
-    driver.find_element_by_id("submit_commit_deceased").click()
-    driver.find_element_by_xpath(".//*[@id='dialog-ok']").click()
-    try:
-        ui.WebDriverWait(driver, 20).until(EC.visibility_of_element_located((By.XPATH, ".//*[@class ='message message-success']")))
-        elem = driver.find_element_by_xpath(".//*[@class ='message message-success']").text
-        if elem.startswith("This deceased was confirmed as committed"):
-            print(Dname + " Comitted Successfully")
-    except Exception as e: print(Dname + " NOT Comitted. Something went wrong")
+    CloseAndCommit = CloseFuneralPage(driver)
+    CloseAndCommit.CommitDeceased(Dname)        # Commit Deceased
+    CloseAndCommit.CloseArrangement(Dname)      # Close the Funeral
 
-    driver.find_element_by_id("close_funeral_arrangement").click()
-    driver.find_element_by_id("id_closure_reason_1").click()
-    driver.find_element_by_id("submit_close_funeral_arrangement").click()
-    driver.find_element_by_xpath(".//*[@id='dialog-ok']").click()
-
-    try:
-        ui.WebDriverWait(driver, 20).until(EC.visibility_of_element_located((By.XPATH, ".//*[@class='message message-success']")))
-        elem = driver.find_element_by_xpath(".//*[@class='message message-success']").text
-        if elem.startswith("You have successfully closed"):
-            print(Dname + " Funeral Arrangement Closed Successfully")
-    except Exception as e: print(Dname + " Funeral Arrangement Cann Not be Closed")
-    driver.find_element_by_css_selector("button.menu-toggle__nav.menu-toggle__nav--user").click()
-    driver.find_element_by_link_text("Log out").click()

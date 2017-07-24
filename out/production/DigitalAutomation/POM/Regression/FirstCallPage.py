@@ -1,3 +1,4 @@
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys
 
 
@@ -79,6 +80,15 @@ class FirstCallPage(object):
 
     def savefirstcall(self):
         self.driver.find_element_by_css_selector("button.btn-primary.btn-save-first-contact").click()
+
+        try:
+            self.driver.find_element_by_xpath(".//*[@class='message-content']")
+            elem = self.driver.find_element_by_xpath(".//*[@class='message-content']").text
+            if elem.startswith("First call saved"):
+                print("First Call Created Successfully\n")
+        except NoSuchElementException as e :
+            print("Could Not Create First Call  \n")
+            self.driver.close()
 
     def Logout(self):
         self.driver.find_element_by_css_selector("button.menu-toggle__nav.menu-toggle__nav--user").click()

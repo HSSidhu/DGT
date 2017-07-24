@@ -18,7 +18,7 @@ class DataSheetPage(object):
             password = AllUsers.cell_value(1,2)
 
         else:
-            email = AllUsers.cell_value(2,1)
+            email = AllUsers.cell_value(2,0)
             password = AllUsers.cell_value(2,2)
 
         t = LoginPage(self.driver)  # using another function
@@ -34,7 +34,7 @@ class DataSheetPage(object):
             password = AllUsers.cell_value(1,2)
 
         else:
-            email = AllUsers.cell_value(2,2)
+            email = AllUsers.cell_value(2,1)
             password = AllUsers.cell_value(2,2)
 
         t = BookingInPage(self.driver)  # using another function
@@ -49,7 +49,7 @@ class DataSheetPage(object):
             password = AllUsers.cell_value(1,2)
 
         else:
-            email = AllUsers.cell_value(2,2)
+            email = AllUsers.cell_value(2,1)
             password = AllUsers.cell_value(2,2)
 
         self.driver.find_element_by_id("id_second_verification-second_user_email").send_keys(email)
@@ -65,7 +65,7 @@ class DataSheetPage(object):
             password = AllUsers.cell_value(1,2)
 
         else:
-            email = AllUsers.cell_value(2,2)
+            email = AllUsers.cell_value(2,1)
             password = AllUsers.cell_value(2,2)
 
         self.driver.find_element_by_id("id_username").send_keys(email)
