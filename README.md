@@ -1,2 +1,2 @@
-# DigitalWork
+# dgt
 Python
