@@ -4,23 +4,23 @@ class AdminLoginPage(object):
         self.driver= AutomationDriver
 
     def local(self):
-        self.driver.get("http://funeral-director-frontend.local.fnc-dev.co.uk/admin")
+        self.driver.get("https:-dev.co.uk/admin")
         self.driver.find_element_by_id("id_username").clear()
-        self.driver.find_element_by_id("id_username").send_keys("admin@admin.com")
+        self.driver.find_element_by_id("id_username").send_keys("admin")
         self.driver.find_element_by_id("id_password").clear()
         self.driver.find_element_by_id("id_password").send_keys("admin")
 
     def preprod(self):
-        self.driver.get("https://funeral-director-frontend-preprod.fnc-tools.co.uk/admin")
+        self.driver.get("https://tools.co.uk/admin")
         self.driver.find_element_by_id("id_username").clear()
-        self.driver.find_element_by_id("id_username").send_keys("admin@admin.com")
+        self.driver.find_element_by_id("id_username").send_keys("admin")
         self.driver.find_element_by_id("id_password").clear()
-        self.driver.find_element_by_id("id_password").send_keys("PX3TfHt5JxW72mJnpdG7Yr4S")
+        self.driver.find_element_by_id("id_password").send_keys("admin")
 
     def qa(self):
-        self.driver.get ("https://funeral-director-frontend-qa.fnc-dev.co.uk/admin")
+        self.driver.get ("https:dev.co.uk/admin")
         self.driver.find_element_by_id("id_username").clear()
-        self.driver.find_element_by_id("id_username").send_keys("admin@admin.com")
+        self.driver.find_element_by_id("id_username").send_keys("admin")
         self.driver.find_element_by_id("id_password").clear()
         self.driver.find_element_by_id("id_password").send_keys("admin")
         
